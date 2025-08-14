@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       () {
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => Loginscreen()),
+          MaterialPageRoute(builder: (context) => LoginScreen()),
         );
       },
     );
@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           children: [
             Uihelper.CustomImage(imgurl: "image.png"),
             SizedBox(height: 10),
-            Uihelper.CustomImage(imgurl: "Logo.png"),
+            Uihelper.CustomImage(imgurl: "logo.png"),
           ],
         ),
       ),
