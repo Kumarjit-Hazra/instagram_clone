@@ -55,6 +55,7 @@ flutter:
     - assets/images/
     - assets/images/add.png
     - assets/images/Camera Icon.png
+    - assets/images/Comment.png
     - assets/images/fb.png
     - assets/images/home.png
     - assets/images/Icon-1.png
@@ -67,10 +68,12 @@ flutter:
     - assets/images/Instagram Logo-1.png
     - assets/images/Instagram Logo.png
     - assets/images/Instagram Profile.png
+    - assets/images/Like.png
     - assets/images/likes.png
     - assets/images/Live.png
     - assets/images/logo.png
     - assets/images/Messanger.png
+    - assets/images/More Icon.png
     - assets/images/Oval-1.png
     - assets/images/Oval-2.png
     - assets/images/Oval-3.png
@@ -86,6 +89,7 @@ flutter:
     - assets/images/Profiles.png
     - assets/images/Rectangle-1.png
     - assets/images/Rectangle.png
+    - assets/images/Save.png
     - assets/images/Search Icon.png
     - assets/images/search.png
     - assets/images/Shape-1.png
@@ -93,6 +97,7 @@ flutter:
     - assets/images/Shape-3.png
     - assets/images/Shape.png
     - assets/images/Tags Icon.png
+    - assets/images/Search.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see

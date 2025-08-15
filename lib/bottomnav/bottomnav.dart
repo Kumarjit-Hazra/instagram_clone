@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:insta_clone/screens/homescreen.dart';
 import 'package:insta_clone/screens/likescreen.dart';
 import 'package:insta_clone/screens/loginscreen.dart';
 import 'package:insta_clone/screens/postscreen.dart';
 import 'package:insta_clone/screens/profilescreen.dart';
 import 'package:insta_clone/screens/searchscreen.dart';
+import 'package:insta_clone/widgets/uihelper.dart';
 
 class Bottomnav extends StatefulWidget {
   const Bottomnav({super.key});
@@ -41,25 +41,25 @@ class _BottomnavState extends State<Bottomnav> {
         backgroundColor: Colors.black,
         selectedItemColor: Colors.white,
         unselectedItemColor: Colors.grey,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
+            icon: Uihelper.CustomImage(imgurl: "home.png"),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
+            icon: Uihelper.CustomImage(imgurl: "Search.png"),
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.plus_app),
+            icon: Uihelper.CustomImage(imgurl: "add.png"),
             label: 'Post',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.heart),
+            icon: Uihelper.CustomImage(imgurl: "likes.png"),
             label: 'Likes',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
+            icon: Uihelper.CustomImage(imgurl: "profileicon.png"),
             label: 'Profile',
           ),
         ],
