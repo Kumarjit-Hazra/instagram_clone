@@ -1,5 +1,3 @@
-// lib/uihelper.dart
-
 import 'package:flutter/material.dart';
 
 class Uihelper {
@@ -11,7 +9,7 @@ class Uihelper {
       onPressed: callback,
       child: Text(
         text,
-        style: TextStyle(fontSize: 12, color: const Color(0xFF3897F0)),
+        style: const TextStyle(fontSize: 12, color: Color(0xFF3897F0)),
       ),
     );
   }
@@ -66,20 +64,19 @@ class Uihelper {
     );
   }
 
-  // --- CORRECTED METHOD ---
   static Widget CustomButton({
     required VoidCallback callback,
-    required String buttonName, // Changed to lowerCamelCase for convention
+    required String buttonName,
   }) {
     return SizedBox(
       height: 45,
       width: 343,
       child: ElevatedButton(
-        onPressed: callback, // Simplified callback
+        onPressed: callback,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF0095F6), // Using hex for consistency
+          backgroundColor: const Color(0xFF0095F6),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(8.0), // Fixed this line
+            borderRadius: BorderRadius.circular(8.0),
           ),
         ),
         child: Text(

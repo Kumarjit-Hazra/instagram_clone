@@ -3,7 +3,7 @@ import 'package:insta_clone/Widgets/uihelper.dart';
 import 'package:insta_clone/screens/messagescreen.dart';
 
 class Homescreen extends StatelessWidget {
-  var stories = [
+  final List<Map<String, String>> stories = [
     {
       "img": "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=1085&auto=format&fit=crop",
       "name": "Your Story",
@@ -177,7 +177,7 @@ class Homescreen extends StatelessWidget {
               ),
               const Spacer(),
               IconButton(
-                icon: Uihelper.CustomImage(imgurl: "More Icon.png"),
+                icon: Uihelper.CustomImage(imgurl: "Shape-3.png"),
                 onPressed: () {},
               ),
             ],

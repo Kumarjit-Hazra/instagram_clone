@@ -20,9 +20,9 @@ class _BottomnavState extends State<Bottomnav> {
   List<Widget> pages = [
     Homescreen(),
     Searchscreen(),
-    Postscreen(),
+    PostScreen(),
     Likescreen(),
-    Profilescreen(),
+    ProfileScreen(),
     LoginScreen(),
   ];
 

@@ -1,16 +1,40 @@
-# insta_clone
+# 📸 Instagram Clone  
 
-A new Flutter project.
+A **Flutter-powered** Instagram UI clone — delivering a smooth and responsive user experience for browsing, posting, and exploring user profiles, just like the real deal.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features  
+- 👤 **User Profiles** – View and edit profiles with bio, posts, and highlights.  
+- 🖼 **Posts Feed** – Scroll through a grid or feed of posts, like, and comment.  
+- 🔔 **Activity Feed** – See recent likes, follows, and tagged interactions.  
+- 🏷 **Tags Screen** – Browse posts where the user has been tagged.  
+- 📱 **Responsive UI** – Fully adapts to all screen sizes & orientations.  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📷 Screens Overview  
+| Screen | Description |
+|--------|-------------|
+| **Home** | User stories and main feed posts |
+| **Profile** | Bio, stats, highlights, and user posts |
+| **Likes/Activity** | See what people you follow are up to |
+| **Tags** | Explore tagged posts |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🚀 Getting Started  
+
+### 📋 Prerequisites  
+- **Flutter SDK** ≥ 3.0  
+- **Dart SDK** ≥ 2.17  
+- An IDE like **VS Code** or **Android Studio**  
+
+### 📦 Installation  
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/insta_clone.git
+cd insta_clone
+
+# Install dependencies
+flutter pub get

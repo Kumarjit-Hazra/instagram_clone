@@ -1,3 +1,4 @@
 {
-  "debug.enableStatusBarColor": false
+  "debug.enableStatusBarColor": false,
+  "cmake.sourceDirectory": "C:/flutter_projects/insta_clone/linux"
 }

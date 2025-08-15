@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:insta_clone/Screens/signupscreen.dart';
+import 'package:insta_clone/screens/signupscreen.dart';
 import 'package:insta_clone/widgets/uihelper.dart';
-import 'package:insta_clone/Screens/signupscreen.dart';
 import 'package:insta_clone/bottomnav/bottomnav.dart';
-import 'package:insta_clone/Widgets/uihelper.dart' hide Uihelper;
+
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -21,23 +22,25 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Uihelper.CustomImage(imgurl: "logo.png"),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Uihelper.CustomTextfield(
               controller: emailController,
               text: "Email",
-              tohide: false, textinputtype: TextInputType.emailAddress,
+              tohide: false,
+              textinputtype: TextInputType.emailAddress,
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Uihelper.CustomTextfield(
               controller: passwordController,
               text: "Password",
-              tohide: true, textinputtype: TextInputType.text,
+              tohide: true,
+              textinputtype: TextInputType.text,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(right: 20),
+                  padding: const EdgeInsets.only(right: 20),
                   child: Uihelper.CustomTextButton(
                     text: "Forgot password?",
                     callback: () {},
@@ -45,20 +48,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Uihelper.CustomButton(
-  callback: () {
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) => Bottomnav(),
-      ),
-    );
-  },
-  buttonName: "Log In",
-),
-
-            SizedBox(height: 20),
+              callback: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Bottomnav(),
+                  ),
+                );
+              },
+              buttonName: "Log In",
+            ),
+            const SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -69,16 +71,16 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ],
             ),
-            SizedBox(height: 10),
-            Text(
+            const SizedBox(height: 10),
+            const Text(
               "OR",
               style: TextStyle(fontSize: 12, fontWeight: FontWeight.w400),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Don't have an account?",
                   style: TextStyle(fontSize: 14, color: Colors.white),
                 ),
@@ -88,7 +90,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => Signupscreen(),
+                        builder: (context) => const Signupscreen(),
                       ),
                     );
                   },
