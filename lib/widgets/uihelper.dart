@@ -60,7 +60,9 @@ class Uihelper {
       "assets/images/$imgurl",
       width: width,
       height: height,
-      fit: BoxFit.contain,
+      fit: BoxFit.scaleDown,
+      filterQuality: FilterQuality.high,
+      isAntiAlias: true,
     );
   }
 
